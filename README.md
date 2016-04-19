@@ -22,7 +22,6 @@ is very important. How are repositories managed? Our idea is to keep it simple a
 Some placed manage separate repositories per crestron device control module. At this moment I would shy away from that, until we
 reach a point where we are releasing modules to the public.
 
-<div>
 <p>Some use-cases to consider:
 <ul>
 <li>How to start a new program and intoduce the data to the github repo</li>
@@ -32,4 +31,16 @@ reach a point where we are releasing modules to the public.
 <li>What is the process to edit b/c of system change?</li>
 <li>What codes go into GitHub?</li>
 </ul>
-</p></div>
+</p>
+
+<p>What files go in a repository? Any file necessary that needs loaded into any customized hardware to fulfill the function 
+of a control system. The common convention with source code management is to only include the files necessary to recreate compiles. 
+Due to the often intimate connection between device database version and compile output, I suggest also storing a version of the 
+compiled output ready to load to hardware, at the very least with a milestone such as a version tag.</p>
+
+<p>Should we branch? Branching is often used for concurrent development on the same program output. The only thing I could think 
+of would be separation of DSP versus LOGIC versus GUI development. Oftentimes UI and LOGIC development happen at the same time 
+from the same person. Branching adds in at least one step for someone with proper authority, via web page or command line. Also 
+adds in the necessary step of documenting via comments. This could be seen as an unnecessary step that adds an administrative cost 
+to the source code management workflows. My opinion is to avoid branching at the current moment (i.e. "Develop on the Master 
+development path") until we have an increased comfort level file management on the development and service perspectives.</p>
