@@ -21,3 +21,15 @@ folder structure local on a desktop is not relevant. But folder structure from t
 is very important. How are repositories managed? Our idea is to keep it simple at the expense of storing redundant data.
 Some placed manage separate repositories per crestron device control module. At this moment I would shy away from that, until we
 reach a point where we are releasing modules to the public.
+
+<div>
+<p>Some use-cases to consider:
+<ul>
+<li>How to start a new program and intoduce the data to the github repo</li>
+<li>How to update the repo during development?</li>
+<li>What is the process to edit b/c of bugfix?</li>
+<li>What is the process to edit b/c of service?</li>
+<li>What is the process to edit b/c of system change?</li>
+<li>What codes go into GitHub?</li>
+</ul>
+</p></div>
